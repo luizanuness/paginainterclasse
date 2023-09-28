@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Interclasses 2023</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar col-12 m-auto navbar-expand-lg position-fixed fixed-top" style="background-color: #e1302a;"
+            style="z-index:999;">
+            <img src="/imagem/Sesi-SP.png" width="80" height="40" alt="logo sesi sp">
+            <a class="navbar-brand" href="#" style="color: white;">Interclasses</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="color: white;">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.sesisp.org.br/educacao/educacao/sao-roque" target="_blank"
+                            style="color: white;">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Times</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Interclasses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color:#fff" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Galeria de fotos
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #e1302a;">
+                            <li><a class="dropdown-item" style="color:#fff; background-color: #e1302a;"
+                                    href="#">27/09/2023</a></li>
+                            <li><a class="dropdown-item" style="color:#fff" href="#">09/10/2023</a></li>
+                            <li><a class="dropdown-item" style="color:#fff" href="#">Final Dezembro</a></li>
+                            <li><a class="dropdown-item" style="color:#fff" href="#">Teste de data</a></li>
+
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--carousel fotos-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagem/Frame 1.png" class="d-block w-100" alt="interclasses sesi volei">
+            </div>
+            <div class="carousel-item">
+                <img src="imagem/frame 2.png" class="d-block w-100" alt="interclasses sesi volei">
+            </div>
+            <div class="carousel-item">
+                <img src="imagem/frame 3.jpg" class="d-block w-100" alt="interclasses sesi volei">
+            </div>
+            <div class="carousel-item">
+                <img src="imagem/frame 4.jpg" class="d-block w-100" alt="interclasses sesi volei">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--card times-->
+    <center>
+        <div class="row row-cols-1 row-cols-md-3 g-4 col-11 mt-2">
+            <div class="card p-3 mb-2 bg-dark text-white">
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Time: 9A</h5>
+                        <p class="card-text">Infos do time.</p>
+                    </div>
+                    <div class="card-footer">
+
+
+
+                        <!--modal-->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9a">
+                            Sobre o time
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal9a" tabindex="-1" aria-labelledby="modal9aLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modal9aLabel">Time: 9A</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        texto texto texto
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-3 mb-2 bg-warning text-white">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Time: 9B</h5>
+                            <p class="card-text">Infos do time.</p>
+                        </div>
+                        <div class="card-footer">
+
+
+
+                            <!--modal-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal9b">
+                                Sobre o time
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal9b" tabindex="-1" aria-labelledby="modal9bLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modal9bLabel">Time: 9B</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            texto texto texto
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-3 mb-2 bg-success text-white">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Time: 1A</h5>
+                            <p class="card-text">Infos do time.</p>
+                        </div>
+                        <div class="card-footer">
+
+
+
+                            <!--modal-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal1a">
+                                Sobre o time
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1a" tabindex="-1" aria-labelledby="modal1aLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modal1aLabel">Time: 1A</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            texto texto texto
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-3 mb-2 text-white" style="background-color: rgb(130, 5, 155);">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Time: 1B</h5>
+                            <p class="card-text">Infos do time.</p>
+                        </div>
+                        <div class="card-footer">
+
+
+
+                            <!--modal-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal1b">
+                                Sobre o time
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1b" tabindex="-1" aria-labelledby="modal1bLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modal1bLabel">Time: 1B</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            texto texto texto
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-3 mb-2 bg-danger text-white">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Time: 2A</h5>
+                            <p class="card-text">Infos do time.</p>
+                        </div>
+                        <div class="card-footer">
+
+
+
+                            <!--modal-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal2a">
+                                Sobre o time
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal2a" tabindex="-1" aria-labelledby="modal2aLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modal2aLabel">Time: 2A</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            texto texto texto
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-3 mb-2 bg-primary text-white">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Time: 3A</h5>
+                            <p class="card-text">Infos do time.</p>
+                        </div>
+                        <div class="card-footer">
+
+
+
+                            <!--modal-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal3a">
+                                Sobre o time
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal3a" tabindex="-1" aria-labelledby="modal3aLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modal3aLabel">Time: 3A</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            texto texto texto
+                                        </div>
+                                        <div class="modal-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <br>
+    <!--TABELA DE JOGOS-->
+    <div class="container">
+        <h2 style="background-image: linear-gradient(to bottom, rgb(253, 133, 133), red); text-align: center;">Placar
+            Interclasses</h2>
+
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Posição</th>
+                    <th>Cor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-success text-white">
+                    <td>Jogo 1</td>
+                    <td>1º Lugar</td>
+                    <td>Verde</td>
+                </tr>
+                <tr class="bg-danger text-white">
+                    <td>Jogo 2</td>
+                    <td>2º Lugar</td>
+                    <td>Vermelho</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--depoimentos-->
+    <style>
+        .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+    <div class="testimonial">
+        <p>"Frase 1"</p>
+        <p>- Nome da pessoa</p>
+    </div>
+    <div class="testimonial">
+        <p>"Frase 2"</p>
+        <p>- Nome da pessoa</p>
+    </div>
+    <div class="testimonial">
+        <p>"Frase 3"</p>
+        <p>- Nome da pessoa</p>
+    </div>
+    <div class="testimonial">
+        <p>"Frase 4"</p>
+        <p>- Nome da pessoa</p>
+    </div>
+
+    <!--script testimonial-->
+    <script>
+        //funcao para exibir depoimento aleatorio
+        function displayRandomTestimonial() {
+            const testimonials = document.querySelectorAll(`.testimonial`);
+            testimonials.forEach(testimonial => {
+                testimonial.style.display = `none`;
+            });
+            const randomIndex = Math.floor(Math.random() * testimonials.length);
+            testimonials[randomIndex].style.display = `block`;
+        }
+        //chama a funcao para exibir um depoimento aleatorio inicial
+        displayRandomTestimonial();
+        //configura o intervalo para exibir depoiment aleatorio em 2000ms
+        setInterval(displayRandomTestimonial, 2000);
+    </script>
+
+
+
+    <!--rodape-->
+    <center>
+        <style>
+            footer {
+                background-color: #e1302a;
+                color: #fff;
+
+            }
+        </style>
+        <footer>
+            &copy; Todos os direitos reservados a Turma 2A TIDEV SESI/SENAI
+        </footer>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
